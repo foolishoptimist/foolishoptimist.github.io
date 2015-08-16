@@ -1,0 +1,164 @@
+html
+{
+  height: 100%;
+}
+
+body
+{
+	font-family: "Century Gothic", "Tehoma", "Arial", san-serif;
+	color: #DDD4EB;	
+	padding: 0;
+	margin: 0;
+	background-color: #212E5C;
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+}
+
+p
+{
+	font-size: medium;
+}
+
+h1
+{
+	color: #DDD4EB;
+	font-size: x-large;
+	font-weight: normal;
+	padding-top: 5px;
+	border-bottom: 1px solid #DDD4EB;
+}
+
+h2
+{
+	font-size: large;
+	font-weight: normal;
+	font-style: italic;	
+}
+
+h1,h2
+{
+	border-bottom: 1px solid #DDD4EB;
+}
+
+
+
+a
+{
+	color: #DDD4EB;
+	outline: none;
+}
+
+
+.title
+{
+	display: inline;
+	position: relative;
+	color: #EBE8E5;
+	font-size: xx-large;
+	font-weight: 200;
+}
+
+#background
+{	
+	position: absolute;
+	/*background: -webkit-gradient(linear,left bottom,left top, color-stop(0%,#6E7AEB), color-stop(40%,#354A95), color-stop(90%,#212E5C));*/
+	background: -webkit-gradient(linear,left bottom,left top, color-stop(0%,#6E7AEB), color-stop(40%,#354A95), color-stop(90%,#212E5C));
+	background: -moz-linear-gradient(90deg, #6E7AEB 0%, #354A95 40%, #212E5C 90%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#212E5C', endColorstr='#6E7AEB');
+	width: 100%;
+	height: 100%;
+	z-index: -3;
+}
+
+
+#screen
+{
+	width: 100%;
+	min-width: 600px;
+	height: 90%;
+}
+
+#footer
+{
+	left: 10px;
+	position: absolute;
+	bottom: 0px;
+	width:100%;
+}
+
+
+#content
+{
+	float: right;
+	width: 80%;
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+#option-content
+{
+	width: 70%;
+	max-width: 70%;
+	height: 70%;
+	clear: both;
+	display: block;
+}
+
+#options
+{
+	float: left;
+	width: 15%;
+	max-width: 140px;
+	height: 100%;
+}
+
+.option
+{
+	color: #DDD4EB;
+	font-size: x-large;
+	font-weight: normal;
+	padding-top: 5px;
+	margin: 0.67em 0px;
+	text-align: right;
+	border: none;
+	text-decoration:none;
+	border-bottom: none;
+	display: list-item;
+	list-style-type: none;
+}
+
+
+.date
+{
+	float: right;
+}
+
+#details
+{
+	color: #363369;
+	font-size: x-small;
+}
+	
+.selected
+{
+	cursor: default;
+}
+
+
+.icon
+{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	max-height: 100%;
+	z-index: 1;
+}
+
+.star
+{
+	position: absolute;
+	width: 3px;
+	height: 3px;
+}

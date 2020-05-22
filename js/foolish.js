@@ -145,7 +145,7 @@ function twinkle(){
 
 
 function moonRise(){
-	var moon_anim_dur = 50;
+	var moon_anim_dur = 150;
 	var	x = 80;
   
   var style=""+

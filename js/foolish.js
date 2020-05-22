@@ -23,9 +23,9 @@ $(document).ready(function() {
 		$('#title2').animate({'left': '-=10%','opacity':1}, 2000,'swing',fade_footer);
 	},1500);
 
+	moonRise();
 	initStars();
 	
-	moonRise();
 	
 	/*
 	//Setup AJAX option click event
@@ -149,13 +149,16 @@ function moonRise(){
 	var	x = 80;
   
   var style=""+
+  "@-webkit-keyframes rise {"+
+    "100% { -webkit-transform: scale(0.3); }"+
+  "} "+
   "@keyframes rise {" +
-          "100% { top: -50%; transform: scale(0.3); }"+
-      "}"+
+    "100% { top: -50%; transform: scale(0.3); }"+
+  "} "+
   ".moon {"+
     "top: 250%;"+
-    "left: "+x+"%;"+ 
-    "scale: 2;"+
+    "left: "+x+"%;"+
+    "transform: scale(2.0);"+
     ""+ 
     
     "-webkit-animation: rise "+moon_anim_dur+"s infinite linear;"+
